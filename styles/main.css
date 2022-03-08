@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-dark-purple: #480CA8;
+    --main-pink: #F72585;
+    --text-color: #FFFFFF;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: var(--main-dark-purple);
+    font-family: 'Inter', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+
+.wrapper {
+    padding: 1rem;
+}
+
+.main-logo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.main-logo_desktop {
+    display: none;
+}
+
+.bg {
+    width: 100%;
+    max-height: 70vh;
+    text-align: center;
+}
+
+.bg img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: inherit;
+    object-fit: contain;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.25;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.base-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 3rem;
+    background: var(--main-pink);
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: background-color .5s ease-out;
+}
+
+.base-btn:hover {
+    background: #CB2A74;
+}
+
+.text-block__button {
+    margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+
+    .wrapper {
+        padding: 0 0 0 7.027818%;
+        height: 100%;
+    }
+    .main-logo {
+        display: none;
+        text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    .main-logo_desktop {
+        display: block;
+    }
+
+    .main-logo_desktop img {
+        height: 1.5rem;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 1rem;
+        height: 100%;
+    }
+
+    .bg {
+        order: 2;
+        height: 100%;
+        max-height: 100vh;
+        grid-column: 6 / -1;
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+    }
+
+    .bg img {
+        width: 100%;
+        height: auto;
+        max-width: unset;
+        max-height: unset;
+        object-fit: unset;
+    }
+
+    .text-block {
+        order: 1;
+        grid-column: 1 / 6;
+        padding: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+        z-index: 2;
+    }
+
+    .text-block__button {
+
+    }
+
+    .base-btn {
+        width: auto;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 1;
+        margin: 0;
+    }
+}
