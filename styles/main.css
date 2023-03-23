@@ -55,13 +55,19 @@ h1 {
     margin-top: 1rem;
     margin-bottom: 1.25rem;
     line-height: 1.25;
-    font-weight: 900;
+    font-weight: 700;
 }
 
 p {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
+}
+
+.buttons-group {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }
 
 .base-btn {
@@ -167,4 +173,11 @@ p {
     p {
         font-size: 1.125rem;
     }
+
+    .buttons-group {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    
 }
