@@ -66,7 +66,7 @@ p {
 
 .buttons-group {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -165,8 +165,8 @@ p {
     }
 
     h1 {
-        font-size: 4rem;
-        line-height: 1;
+        font-size: 3rem;
+        line-height: 1.2;
         margin: 0;
     }
 
@@ -176,7 +176,7 @@ p {
 
     .buttons-group {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 16px;
     }
     
