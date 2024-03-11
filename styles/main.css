@@ -68,6 +68,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 32px;
 }
 
 .base-btn {
